@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
 import { FiFileText } from 'react-icons/fi';
 
 const CTASection = () => {
@@ -18,7 +17,7 @@ const CTASection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 text-center">
+    <section id="contact" className="py-24 px-6 text-center">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -26,13 +25,13 @@ const CTASection = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <motion.h2 
-          className="text-4xl md:text-5xl font-extrabold text-slate-100"
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-100"
           variants={itemVariants}
         >
           Let's Connect
         </motion.h2>
         <motion.p 
-          className="text-lg text-slate-300 mt-4 max-w-xl mx-auto"
+          className="text-base md:text-lg text-slate-300 mt-4 max-w-xl mx-auto"
           variants={itemVariants}
         >
           I'm actively seeking internship opportunities and am excited to connect. Feel free to reach out through the form below or view my resume.
@@ -80,13 +79,15 @@ const CTASection = () => {
         </motion.form>
 
         <motion.div variants={itemVariants} className="mt-12">
-            <NavLink 
-              to="/resume"
+            <a 
+              href="/Resume.pdf"
+              target="_blank" 
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 py-3 px-8 border border-teal-400 text-teal-400 font-bold rounded-lg hover:bg-teal-400 hover:text-slate-900 transition-all duration-300"
             >
               <FiFileText />
               <span>View My Resume</span>
-            </NavLink>
+            </a>
         </motion.div>
       </motion.div>
     </section>

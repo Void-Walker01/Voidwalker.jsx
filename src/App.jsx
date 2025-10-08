@@ -1,20 +1,24 @@
-import Background from './components/Background'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from './pages/Home'
+import { Routes, Route } from 'react-router-dom';
+import Background from './components/Background';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 
 function App() {
   return (
-    // Add 'flex flex-col' here to create a vertical layout
-    <div className="relative bg-slate-950 min-h-screen overflow-hidden flex flex-col">
+    <div className="bg-slate-950 overflow-x-hidden">
       <Background />
-      <Header />
-      <main className="relative z-10 flex-grow pt-20">
-        <Home />
-      </main>
-      <Footer />
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow pt-20">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
