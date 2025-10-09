@@ -1,3 +1,4 @@
+import React,{useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Background from './components/Background';
 import Header from './components/Header';
@@ -8,6 +9,30 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 function App() {
+
+  useEffect(() => {
+    const originalTitle = document.title;
+    const originalIcon= document.querySelector('link[rel="icon"]').href;
+
+    const handleVisibility=()=>{
+      if(document.hidden){
+        document.title ='Hey, Come Back!';
+        document.querySelector('link[rel="icon"]').href = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>";
+      }else{
+        document.title = originalTitle;
+        document.querySelector('link[rel="icon"]').href = originalIcon;
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibility);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility);
+    };
+    
+  }, []);
+
+
   return (
     <div className="bg-slate-950 overflow-x-hidden">
       <Background />
