@@ -2,7 +2,7 @@ import React from 'react';
 import AboutIntro from '../components/AboutIntro';
 import Skills from '../components/Skills';
 import SoftSkills from '../components/SoftSkills';
-const Home = () => {
+const About = () => {
   return (
     <div>
       <AboutIntro />
@@ -12,5 +12,5 @@ const Home = () => {
   );
 };
 
-export default Home;    
+export default About;    
 
