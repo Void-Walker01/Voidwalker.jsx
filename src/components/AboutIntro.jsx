@@ -50,18 +50,6 @@ const AboutIntro = () => {
             <p className="text-slate-300 text-lg leading-relaxed">
               I am currently seeking challenging <span className="text-teal-400 font-bold">internship opportunities</span> to apply my diverse skill set, collaborate with talented teams, and contribute to innovative projects that make a real difference. I'm eager to learn, grow, and build impactful software.
             </p>
-
-            {/* If you want to add a quote directly here, you can do it like this: */}
-            {/* <motion.p 
-              className="text-slate-400 italic text-xl mt-8"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              "Strive to build things that make a difference!" <br/> – Rohit Guleria
-            </motion.p> */}
-
           </motion.div>
         </div>
       </div>

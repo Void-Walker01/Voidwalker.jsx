@@ -25,8 +25,8 @@ const AnimatedText = ({ text, className = '', type = 'letter' }) => {
     },
     hidden: {
       opacity: 0,
-      x: -20, // Restored original x value
-      y: 10,  // Restored original y value
+      x: -20, 
+      y: 10,  
       transition: {
         type: "spring",
         damping: 12,
