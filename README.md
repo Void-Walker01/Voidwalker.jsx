@@ -1,6 +1,6 @@
 # Rohit Guleria - Personal Portfolio
 
-![Rohit Guleria's Portfolio Screenshot](https://i.imgur.com/gK6r57A.jpeg)
+![Rohit Guleria's Portfolio Screenshot](/images/portfolio.png)
 
 A modern, animated, and fully responsive personal portfolio built from scratch to showcase my journey, skills, and projects as a developer. This project serves as a central hub for my professional presence on the web.
 
