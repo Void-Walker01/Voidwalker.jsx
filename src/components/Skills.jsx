@@ -24,7 +24,6 @@ const skillsData = [
   { name: 'Node.js', icon: <DiNodejsSmall size="100%" /> },
   { name: 'Express.js', icon: <SiExpress size="100%" /> },
   { name: 'JWT', icon: <SiJsonwebtokens size="100%" /> },
-  { name: 'SQL', icon: <TbSql size="100%" /> },
   { name: 'MongoDB', icon: <DiMongodb size="100%" /> },
   { name: 'Git', icon: <DiGit size="100%" /> },
   { name: 'GitHub', icon: <SiGithub size="100%" /> },
