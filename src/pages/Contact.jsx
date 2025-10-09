@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
+
 const Contact = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -12,10 +13,12 @@ const Contact = () => {
     },
   };
 
+
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
+
 
   return (
     // Changed py-20 md:py-28 to have less top padding
@@ -56,20 +59,50 @@ const Contact = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <motion.a variants={itemVariants} href="mailto:rohitmatrix2004@gmail.com" className="flex items-center gap-4 text-slate-300 hover:text-teal-400 transition-colors">
-                  <FiMail size={24} />
+                <motion.a 
+                  variants={itemVariants} 
+                  href="mailto:rohitmatrix2004@gmail.com" 
+                  className="flex items-center gap-4 text-slate-300 hover:text-teal-400 transition-colors"
+                >
+                  <span className="flex-shrink-0 inline-flex items-center justify-center" style={{ width: '24px', height: '24px' }}>
+                    <FiMail size={24} />
+                  </span>
                   <span className="text-lg">rohitmatrix2004@gmail.com</span>
                 </motion.a>
-                <motion.a variants={itemVariants} href="https://www.linkedin.com/in/rohit--guleria/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-teal-400 transition-colors">
-                  <FaLinkedin size={24} />
+                <motion.a 
+                  variants={itemVariants} 
+                  href="https://www.linkedin.com/in/rohit--guleria/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-4 text-slate-300 hover:text-teal-400 transition-colors"
+                >
+                  <span className="flex-shrink-0 inline-flex items-center justify-center" style={{ width: '24px', height: '24px' }}>
+                    <FaLinkedin size={24} />
+                  </span>
                   <span className="text-lg">LinkedIn</span>
                 </motion.a>
-                <motion.a variants={itemVariants} href="https://github.com/Void-Walker01" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-teal-400 transition-colors">
-                  <FaGithub size={24} />
+                <motion.a 
+                  variants={itemVariants} 
+                  href="https://github.com/Void-Walker01" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-4 text-slate-300 hover:text-teal-400 transition-colors"
+                >
+                  <span className="flex-shrink-0 inline-flex items-center justify-center" style={{ width: '24px', height: '24px' }}>
+                    <FaGithub size={24} />
+                  </span>
                   <span className="text-lg">GitHub</span>
                 </motion.a>
-                <motion.a variants={itemVariants} href="https://www.instagram.com/ro_guleria" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-teal-400 transition-colors">
-                  <FaInstagram size={24} />
+                <motion.a 
+                  variants={itemVariants} 
+                  href="https://www.instagram.com/ro_guleria" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-4 text-slate-300 hover:text-teal-400 transition-colors"
+                >
+                  <span className="flex-shrink-0 inline-flex items-center justify-center" style={{ width: '24px', height: '24px' }}>
+                    <FaInstagram size={24} />
+                  </span>
                   <span className="text-lg">Instagram</span>
                 </motion.a>
               </motion.div>
@@ -99,5 +132,6 @@ const Contact = () => {
     </section>
   );
 };
+
 
 export default Contact;

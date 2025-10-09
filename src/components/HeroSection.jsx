@@ -5,9 +5,10 @@ import AnimatedText from './AnimatedText';
 import RoleAnimation from './RoleAnimation';
 import { FiFileText } from 'react-icons/fi'; // 1. Import the icon
 
+
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-24 pb-10">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-5 pb-10">
       <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
         
         {/* Text content section */}
@@ -27,6 +28,7 @@ const HeroSection = () => {
             Rohit Guleria
           </motion.h1>
 
+
           <motion.div
             className="mt-4 md:mt-6"
             initial={{ opacity: 0, y: 20 }}
@@ -35,6 +37,7 @@ const HeroSection = () => {
           >
             <RoleAnimation />
           </motion.div>
+
 
           <motion.div
             className="mt-10 flex justify-center md:justify-start"
@@ -53,7 +56,9 @@ const HeroSection = () => {
             </a>
           </motion.div>
 
+
         </div>
+
 
         {/* Illustration section */}
         <motion.div 
@@ -66,9 +71,11 @@ const HeroSection = () => {
           <img src={DeveloperIllustration} alt="Developer Illustration" className="w-full max-w-sm md:max-w-md" />
         </motion.div>
 
+
       </div>
     </section>
   );
 };
+
 
 export default HeroSection;
