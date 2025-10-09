@@ -1,7 +1,7 @@
 # Rohit Guleria - Personal Portfolio
 
 <div align="center">
-  <img src="./images/portfolio.png" alt="Rohit Guleria's Portfolio Screenshot" width="400">
+  <img src="./images/portfolio.png" alt="Rohit Guleria's Portfolio Screenshot" width="700">
 </div>
 
 A modern, animated, and fully responsive personal portfolio built from scratch to showcase my journey, skills, and projects as a developer. This project serves as a central hub for my professional presence on the web.
